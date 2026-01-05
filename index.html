@@ -3,122 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Three Stars Esports</title>
+  <title>TRANSIT — Official Site</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="dark">
+<body>
+  <div id="transit-root" aria-live="polite"></div>
 
-  <!-- Loader -->
-  <div id="loader" class="loader" role="status" aria-live="polite" aria-label="Loading">
-    <div class="loader-content">
-      <div class="loader-stars">
-        <div class="star s1">★</div>
-        <div class="star s2">★</div>
-        <div class="star s3">★</div>
-      </div>
-      <div class="loader-title">Three Stars</div>
-      <div class="loader-sub">Aligning the stars...</div>
-    </div>
-  </div>
-
-  <main id="app" class="app hidden" aria-hidden="true">
-    <header class="topbar" role="banner">
-      <div class="brand" id="homeBtn" tabindex="0" aria-label="Home">
-        <svg class="brand-star" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 15 9h7l-5 5 2 8-7-4-7 4 2-8L0 9h7z"/></svg>
-        <span class="brand-text">Three Stars</span>
-      </div>
-
-      <nav class="tabs" role="navigation" aria-label="Main tabs">
-        <button class="tab" data-tab="owners" aria-selected="true">Owners</button>
-        <button class="tab" data-tab="pros">Pros</button>
-        <button class="tab" data-tab="map">Map</button>
-        <button class="tab" data-tab="merch">Merch</button>
-      </nav>
-
-      <div class="top-actions">
-        <a class="icon-link" href="https://x.com/3StarsEsports" target="_blank" rel="noopener" aria-label="Twitter X">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 5.92c-.7.31-1.45.52-2.24.62.81-.49 1.43-1.27 1.72-2.2-.76.45-1.6.78-2.5.96C18.6 4.2 17.5 3.75 16.3 3.75c-2.1 0-3.8 1.7-3.8 3.8 0 .3.03.6.1.88-3.16-.16-5.96-1.67-7.84-3.97-.33.57-.52 1.24-.52 1.95 0 1.35.69 2.54 1.74 3.24-.64-.02-1.24-.2-1.77-.5v.05c0 1.86 1.32 3.41 3.07 3.76-.32.09-.66.14-1.01.14-.25 0-.5-.02-.74-.07.5 1.56 1.95 2.7 3.67 2.73-1.35 1.06-3.05 1.69-4.9 1.69-.32 0-.64-.02-.95-.06 1.76 1.13 3.85 1.79 6.09 1.79 7.31 0 11.32-6.06 11.32-11.32v-.52c.78-.56 1.45-1.26 1.98-2.06-.72.32-1.5.54-2.3.64z"/></svg>
-        </a>
-        <a class="icon-link" href="https://discord.com/invite/3stars" target="_blank" rel="noopener" aria-label="Discord">
-          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" alt="Discord" class="discord-img">
-        </a>
-      </div>
-    </header>
-
-    <section id="hero" class="hero">
-      <div class="hero-inner">
-        <div class="hero-emblem" aria-hidden="true">
-          <svg viewBox="0 0 200 200" class="emblem-svg" role="img" aria-hidden="true">
-            <circle cx="100" cy="100" r="96" fill="#0b0b0b" stroke="#222" stroke-width="4"/>
-            <g transform="translate(100,100) scale(1)" fill="#fff" style="transform-origin:100px 100px;">
-              <polygon points="0,-48 12,-6 56,-6 18,18 30,60 0,36 -30,60 -18,18 -56,-6 -12,-6" />
-            </g>
-          </svg>
-        </div>
-
-        <h1 class="hero-title">Welcome</h1>
-        <p class="hero-quote">"When Three Stars Aligned, Success Is Inevitable"</p>
-        <div class="hero-cta">
-          <button id="enterBtn" class="enter-btn" type="button" aria-label="Enter site">Welcome</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="content" class="content" tabindex="-1" aria-live="polite">
-      <div id="owners" class="panel" data-panel="owners" aria-hidden="true">
-        <h2 class="panel-title">Owners</h2>
-        <div class="cards owners-grid" role="list">
-          <div class="card person" role="listitem">
-            <img src="https://images-ext-1.discordapp.net/external/M0zcMPtaci4aOljOitKoHOtQbv_znpXHeEC6UXy8p9w/%3Fsize%3D4096/https/cdn.discordapp.com/guilds/1444872814896222392/users/713058653673881682/avatars/951ed5a1314f01b06148407ca0ae5f56.png?format=webp&quality=lossless&width=687&height=687" alt="Kipp avatar">
-            <div class="meta"><div class="name">kipp3fn</div><button class="btn ghost friend-btn" data-username="kipp3fn">Friend</button></div>
-          </div>
-
-      
-          <div class="card person" role="listitem">
-            <img src="https://images-ext-1.discordapp.net/external/mZQexBEjCD3rS8WvswW6xrWDtBZlh50JR1Nv99f73Zs/%3Fsize%3D4096/https/cdn.discordapp.com/guilds/1444872814896222392/users/1232563371086315545/avatars/cc3f50b02fb014e6aacd3919e4ce7856.png?format=webp&quality=lossless&width=371&height=371" alt="Holy avatar">
-            <div class="meta"><div class="name">holyfnbr</div><button class="btn ghost friend-btn" data-username="holyfnbr">Friend</button></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="pros" class="panel" data-panel="pros" aria-hidden="true">
-        <h2 class="panel-title">Main Pro Players</h2>
-        <div class="cards pros-grid" role="list">
-          <a class="card pro" href="https://fortnitetracker.com/profile/all/transit%20keenbot" target="_blank" rel="noopener"><img src="https://images-ext-1.discordapp.net/external/V96J27apsZmvjLNtlbrhOWv2x0LSCjwk9GfRBh_NHK8/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/579704689717673986/0f482f0766ddf11644a83062c9a80d4c.png?format=webp&quality=lossless&width=580&height=580" alt="Keenbot"><div class="meta"><div class="name">Keenbot</div></div></a>
-
-          <a class="card pro" href="https://fortnitetracker.com/profile/all/transit%20lucks/events" target="_blank" rel="noopener"><img src="https://images-ext-1.discordapp.net/external/cry7tYWunMlvaIf50lryV2Gn8u2GTqLuUrmzeJeeskg/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1247334665296285803/b2f4ee16100c0900a314df8e7547a878.png?format=webp&quality=lossless&width=325&height=325" alt="Lucks"><div class="meta"><div class="name">Lucks</div></div></a>
-
-          <a class="card pro" href="https://fortnitetracker.com/profile/all/trunk" target="_blank" rel="noopener"><img src="https://images-ext-1.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png?format=webp&quality=lossless&width=371&height=371" alt="Trunks"><div class="meta"><div class="name">Trunks</div></div></a>
-        </div>
-      </div>
-
-      <div id="map" class="panel" data-panel="map" aria-hidden="true">
-        <h2 class="panel-title">Server & Map</h2>
-        <p>Join our Discord server: <a href="https://discord.com/invite/3stars" target="_blank" rel="noopener">Discord Invite</a></p>
-        <p>Fortnite Map Code: <a href="https://www.fortnite.com/@blagoje/9179-7247-4725?lang=en-US" target="_blank" rel="noopener">Open Map</a></p>
-      </div>
-
-      <div id="merch" class="panel" data-panel="merch" aria-hidden="true">
-        <h2 class="panel-title">Merch</h2>
-        <p class="muted">This feature hasn't been set up yet. Check back soon.</p>
-        <button id="merchNotify" class="btn ghost" type="button">Why not set up merch?</button>
-      </div>
-    </section>
-
-    <div id="merchModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="merchModalTitle">
-      <div class="modal-inner" role="document">
-        <button id="merchClose" class="modal-close" aria-label="Close">✕</button>
-        <h3 id="merchModalTitle">Merch Not Set Up</h3>
-        <p>Merch hasn't been configured yet. When ready, add your store link in the admin or update the merch URL in the code.</p>
-        <div class="modal-actions">
-          <button id="merchGotIt" class="btn primary" type="button">Got it</button>
-        </div>
-      </div>
-    </div>
-
-    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
-  </main>
-
-  <script src="js/main.js"></script>
+  <script src="js/transit.js"></script>
 </body>
 </html>
